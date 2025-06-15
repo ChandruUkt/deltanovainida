@@ -4,34 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delta Nova India - Medical Tourism</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1580281657527-47d8d720f932') no-repeat center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1580281657527-47d8d720f932?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
       color: white;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
-    .highlight {
-      background-color: #f8f9fa;
-      padding: 30px 20px;
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
     }
+
+    .highlight {
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .highlight h3 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .highlight p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
     .btn-custom {
       width: 100%;
-      margin-bottom: 10px;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
     }
+
+    .join-section {
+      padding: 40px 20px;
+      background-color: #e9f5ff;
+    }
+
     footer {
-      background-color: #343a40;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
+      background-color: #212529;
+      color: #ccc;
+      padding: 30px 15px;
     }
+
     footer a {
       color: #fff;
-      margin: 0 8px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -40,54 +74,61 @@
 <!-- Hero Section -->
 <section class="hero">
   <h1>Welcome to Delta Nova India</h1>
-  <p>Trusted Partner in Medical Tourism for 5+ Years</p>
-  <a href="mailto:deltanovaindia@gmail.com" class="btn btn-light mt-3">Contact Us</a>
+  <p class="lead">Your Trusted Partner in Global Medical Tourism</p>
+  <a href="mailto:deltanovaindia@gmail.com" class="btn btn-light mt-3"><i class="fas fa-envelope"></i> Contact Us</a>
 </section>
 
 <!-- Business Highlights -->
 <section class="highlight text-center">
   <h3>Why Choose Us?</h3>
-  <p>✔ 5 Years of Medical Tourism Service</p>
-  <p>✔ 120+ Hospital Partnerships</p>
-  <p>✔ End-to-End Support: Appointment, Travel, Treatment, Post-op</p>
-  <p>✔ 100+ Happy Patients</p>
-  <p>✔ Dedicated 24/7 Customer Care</p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <p><i class="fas fa-check-circle text-primary"></i> 5 Years of Excellence in Medical Tourism</p>
+        <p><i class="fas fa-hospital text-success"></i> Linked with 120+ Accredited Hospitals</p>
+        <p><i class="fas fa-user-md text-danger"></i> 100+ Satisfied International Patients</p>
+        <p><i class="fas fa-headset text-info"></i> 24/7 Dedicated Customer Support</p>
+        <p><i class="fas fa-briefcase-medical text-warning"></i> Complete Assistance: Appointment → Travel → Treatment → Post-op Care</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Registration Buttons -->
-<section class="container text-center my-4">
-  <h4 class="mb-3">Join or Register Now</h4>
+<section class="container text-center my-5">
+  <h4 class="mb-4">Register with Us</h4>
   <div class="row">
     <div class="col-md-4 mb-3">
-      <a href="#" class="btn btn-primary btn-custom">Register as Hospital</a>
+      <a href="#" class="btn btn-primary btn-custom"><i class="fas fa-hospital-user"></i> Register as Hospital</a>
     </div>
     <div class="col-md-4 mb-3">
-      <a href="#" class="btn btn-success btn-custom">Register as Agent</a>
+      <a href="#" class="btn btn-success btn-custom"><i class="fas fa-user-tie"></i> Register as Agent</a>
     </div>
     <div class="col-md-4 mb-3">
-      <a href="#" class="btn btn-warning btn-custom">Register as Patient</a>
+      <a href="#" class="btn btn-warning btn-custom"><i class="fas fa-user-injured"></i> Register as Patient</a>
     </div>
   </div>
 </section>
 
 <!-- Call for Volunteers -->
-<section class="container text-center my-4">
-  <h5>Are you a Medical Student, Doctor, Nurse or Science Graduate?</h5>
-  <p>Join our excellent Medicare Team and help save lives globally!</p>
+<section class="join-section text-center">
+  <h5>Are You a Medical Student, Doctor, Nurse, or Science Graduate?</h5>
+  <p>Join our outstanding Medicare Team and help bring care across borders!</p>
 </section>
 
 <!-- Footer -->
 <footer>
   <p>Contact: <a href="mailto:deltanovaindia@gmail.com">deltanovaindia@gmail.com</a> | WhatsApp: <a href="https://wa.me/919894532863">+91 98945 32863</a></p>
   <p>
-    <a href="#">About</a> | 
-    <a href="#">Contact</a> | 
-    <a href="#">Facebook</a> | 
-    <a href="#">YouTube</a> | 
+    <a href="#">About</a> |
+    <a href="#">Contact</a> |
+    <a href="#">Facebook</a> |
+    <a href="#">YouTube</a> |
     <a href="#">LinkedIn</a>
   </p>
   <p>&copy; 2025 Delta Nova India - Medical Tourism</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
