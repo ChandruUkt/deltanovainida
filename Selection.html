@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Selection Workflow</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .app-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .flow-step {
+      border-left: 4px solid #3498db;
+      padding: 10px 20px;
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .flow-step::before {
+      content: "➤";
+      position: absolute;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #3498db;
+      font-size: 18px;
+    }
+
+    .decision {
+      color: #16a085;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .arrow {
+      text-align: center;
+      font-size: 24px;
+      color: #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <h2>🏥 Hospital Selection Workflow</h2>
+
+    <div class="flow-step">
+      Step 1: Does the patient specify a preferred hospital?
+      <div class="decision">✔️ Yes → Select as per patient's willingness</div>
+    </div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-step">
+      ❌ No → Choose hospital with best infrastructure and expert surgeons
+    </div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-step">
+      Step 3: Check for matching surgery success stories
+      <div class="decision">✔️ Highlight related patient success stories</div>
+    </div>
+    <div class="arrow">⬇️</div>
+
+    <div class="flow-step">
+      Step 4: Among eligible hospitals, prioritize:
+      <div class="decision">🏆 1-Year Premium Member Hospitals</div>
+    </div>
+  </div>
+</body>
+</html>
